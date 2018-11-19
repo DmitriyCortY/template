@@ -1,0 +1,28 @@
+// Vendor-import
+@import "../lib/smart-grid.scss";
+// Own-import 
+@import "_fonts";
+@import "_var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.b-page {}
+
+.b-header {}
+
+.b-footer {}
+
+.b-main {}
+
+.b-title {}
+
+.b-subtitle {}
+
+.b-menu {}
+
+.b-description {}
+
