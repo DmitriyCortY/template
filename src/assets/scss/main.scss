@@ -1,8 +1,12 @@
 // Vendor-import
 @import "../lib/smart-grid.scss";
+
 // Own-import 
 @import "_fonts";
 @import "_var";
+
+// Components-import 
+@import "components/_modal-window";
 
 * {
     margin: 0;
