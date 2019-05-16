@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DC Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DC Template</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/lib/jquery.material.form/jquery.material.form.min.css">
-    <link rel="stylesheet" href="./assets/lib/wow/animate.css">
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/lib/jquery.material.form/jquery.material.form.min.css">
+	<link rel="stylesheet" href="./assets/lib/wow/animate.css">
 	<link rel="stylesheet" href="./assets/lib/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/lib/normalize.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/lib/normalize.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body>
+
+<body style="background: lightblue;">
 	<section class="b-page">
 		<header class="b-header b-page__header">
 			<div class="b-header-desctop b-header__desctop"></div>
@@ -24,7 +26,19 @@
 		<main class="b-main b-page__main">
 			<div class="b-cover b-main__section">
 				<div class="b-cover__inner">
-					
+					<h1>Заголовок</h1>
+					<h2>Заголовок</h2>
+					<h3>Заголовок</h3>
+					<h4>Заголовок</h4>
+					<h5>Заголовок</h5>
+					<h6>Заголовок</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+						occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<div data-modal-trigger="test">click!!</div>
+
 				</div>
 			</div>
 		</main>
@@ -35,13 +49,39 @@
 	</section>
 
 
-	
-    <script src="./assets/lib/jquery-3.3.1.min.js"></script>
+
+
+	<div class="b-modals">
+		<div class="b-modal" data-modal-window="test">
+			<div class="b-modal__inner">
+				<div class="b-modal__close" data-modal-trigger="test"></div>
+				<div class="b-modal__header b-title">
+					Заказ обратного звонка
+				</div>
+				<div class="b-modal__content">
+					<form action="#">
+						<input type="text">
+						<br>
+						<input type="text">
+						<br>
+						<input type="text">
+						<br>
+						<input type="submit" value="Заказать">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./assets/lib/jquery-3.3.1.min.js"></script>
 	<script src="./assets/lib/jquery.material.form/jquery.material.form.min.js"></script>
-    <script src="./assets/lib/wow/wow.js"></script>
+	<script src="./assets/lib/wow/wow.js"></script>
 	<script src="./assets/lib/fancybox/jquery.fancybox.min.js"></script>
-	
+
 	<script src="./assets/js/main.js"></script>
 
 </body>
+
 </html>

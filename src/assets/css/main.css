@@ -1,3 +1,54 @@
+h1 {
+  font-size: 30px;
+  line-height: 34px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: 900; }
+
+h2 {
+  font-size: 27px;
+  line-height: 31px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: 900; }
+
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: 900; }
+
+h4 {
+  font-size: 21px;
+  line-height: 25px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: 900; }
+
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: 900; }
+
+h6 {
+  font-size: 15px;
+  line-height: 19px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: 900; }
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+strong {
+  font-weight: 900; }
+
 /*  ---------------------------------------------------------------------------
     Template for connecting fonts
     ---------------------------------------------------------------------------
@@ -164,9 +215,188 @@
   font-weight: 800;
   font-style: italic; }
 
+._text-accent {
+  color: #ed11ee; }
+
+._text-dark {
+  color: #262626; }
+
+._text-light {
+  color: #ffffff; }
+
+._text-bold {
+  font-weight: 900; }
+
+._text-thin {
+  font-weight: 100; }
+
+._text-center {
+  text-align: center; }
+
+._text-right {
+  text-align: right; }
+
+._bg-accent {
+  background-color: #ed11ee; }
+
+._bg-light {
+  background-color: #ffffff; }
+
+._bg-dark {
+  background-color: #262626; }
+
+._abs-left-top {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+._abs-left-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0; }
+
+._abs-left-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+._abs-center-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
+._abs-center-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+._abs-center-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
+._abs-right-top {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+._abs-right-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); }
+
+._abs-right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+._rel-left {
+  position: relative;
+  left: 0; }
+
+._rel-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.rel-right {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%); }
+
+.b-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden; }
+
+.b-modal_open {
+  visibility: visible; }
+  .b-modal_open .b-modal__inner {
+    transform: translate(-50%, -50%); }
+
+.b-modal__close {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: all 0.15s ease-in-out; }
+  .b-modal__close:hover {
+    transform: scale(1.05); }
+  .b-modal__close:before, .b-modal__close:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    background-color: #262626; }
+  .b-modal__close:before {
+    transform: translate(-50%, -50%) rotate(-45deg); }
+  .b-modal__close:after {
+    transform: translate(-50%, -50%) rotate(45deg); }
+
+.b-modal__inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 150%);
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  max-height: 768px;
+  background: #ffffff;
+  padding: 70px 35px;
+  transition: all 0.35s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 1200px) {
+    .b-modal__inner {
+      width: 85%;
+      height: 85%;
+      padding: 60px 30px; } }
+  @media screen and (max-width: 960px) {
+    .b-modal__inner {
+      width: 90%;
+      height: 90%;
+      max-height: 100%;
+      padding: 50px 25px; } }
+  @media screen and (max-width: 768px) {
+    .b-modal__inner {
+      width: 95%;
+      height: 95%;
+      padding: 45px 20px; } }
+  @media screen and (max-width: 508px) {
+    .b-modal__inner {
+      width: 100%;
+      height: 100%;
+      padding: 40px 15px; } }
+
+.b-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44px;
+  margin-bottom: 35px;
+  margin-top: 35px; }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
