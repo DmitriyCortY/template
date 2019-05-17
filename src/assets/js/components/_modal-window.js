@@ -11,6 +11,7 @@ class Modal {
     }
     toggleClass() {
         $('[data-modal-window="' + this.modalName + '"]').toggleClass('b-modal_open')
+        $('body').toggleClass('body_overfloy-hidden')
     }
 }
 

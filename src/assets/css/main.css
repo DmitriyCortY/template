@@ -399,4 +399,11 @@ strong {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif; }
 
+.body_overfloy-hidden {
+  overflow: hidden;
+  padding-right: 17px; }
+  @media screen and (max-width: 780px) {
+    .body_overfloy-hidden {
+      padding-right: inherit; } }
+
 /*# sourceMappingURL=main.css.map */

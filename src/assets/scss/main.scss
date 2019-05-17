@@ -29,4 +29,10 @@
     font-family: $firstFont;
 }
 
-
+.body_overfloy-hidden{
+    overflow: hidden;
+    padding-right: 17px;
+    @media screen and (max-width: 780px){
+        padding-right: inherit;
+    }
+}
