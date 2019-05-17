@@ -215,6 +215,97 @@ strong {
   font-weight: 800;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-ThinIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-ThinIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-ThinIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-ThinIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-ThinIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-ThinIt.svg#ProximaNova-ThinIt") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-Light.eot");
+  src: url("../font/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-Light.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../font/ProximaNova/ProximaNova-Light.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-LightIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-LightIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-LightIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-LightIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-LightIt.svg#ProximaNova-LightIt") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-Regular.eot");
+  src: url("../font/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../font/ProximaNova/ProximaNova-Regular.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-RegularIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-RegularIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-RegularIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-RegularIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-RegularIt.svg#ProximaNova-RegularIt") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-SemiboldIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-SemiboldIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-SemiboldIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-SemiboldIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-SemiboldIt.svg#ProximaNova-SemiboldIt") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-Semibold.eot");
+  src: url("../font/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-Semibold.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../font/ProximaNova/ProximaNova-Semibold.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-BoldIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-BoldIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-BoldIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-BoldIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-BoldIt.svg#ProximaNova-BoldIt") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../font/ProximaNova/ProximaNova-Bold.eot");
+  src: url("../font/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../font/ProximaNova/ProximaNova-Bold.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-ExtrabldIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-ExtrabldIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-ExtrabldIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-ExtrabldIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-ExtrabldIt.svg#ProximaNova-ExtrabldIt") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-Extrabld.eot");
+  src: url("../font/ProximaNova/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-Extrabld.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-Extrabld.woff") format("woff"), url("../font/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-Extrabld.svg#ProximaNova-Extrabld") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-BlackIt.eot");
+  src: url("../font/ProximaNova/ProximaNova-BlackIt.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-BlackIt.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-BlackIt.woff") format("woff"), url("../font/ProximaNova/ProximaNova-BlackIt.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-BlackIt.svg#ProximaNova-BlackIt") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../font/ProximaNova/ProximaNova-Black.eot");
+  src: url("../font/ProximaNova/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova/ProximaNova-Black.woff2") format("woff2"), url("../font/ProximaNova/ProximaNova-Black.woff") format("woff"), url("../font/ProximaNova/ProximaNova-Black.ttf") format("truetype"), url("../font/ProximaNova/ProximaNova-Black.svg#ProximaNova-Black") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
 ._text-accent {
   color: #ed11ee; }
 
@@ -393,11 +484,67 @@ strong {
   margin-bottom: 35px;
   margin-top: 35px; }
 
+.b-alert {
+  width: 100%;
+  margin-bottom: 15px; }
+
+@keyframes alertAnim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.b-alert_success {
+  background-color: #065746; }
+
+.b-alert_danger {
+  background-color: #e75252; }
+
+.b-alert_info {
+  background-color: #0b4d65; }
+
+.b-alert__header {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .b-alert__header a {
+    color: inherit !important; }
+
+.b-alert__icon {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 10px; }
+
+.b-alert__title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-top: 2px; }
+
+.b-alert__close {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: auto; }
+
+.b-alert__body {
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 100;
+  text-align: justify; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Proxima Nova", sans-serif; }
 
 .body_overfloy-hidden {
   overflow: hidden;

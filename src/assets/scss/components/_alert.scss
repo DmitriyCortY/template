@@ -1,0 +1,60 @@
+.b-alert{
+    width: 100%;
+    margin-bottom: 15px;
+    // animation: alertAnim 0.3s ease-in-out;
+}
+@keyframes alertAnim{
+    0%{
+        opacity: 0;
+    }    
+    100%{
+        opacity: 1;
+    }
+}
+.b-alert_success{
+    background-color: $greenColor;
+}
+.b-alert_danger{
+    background-color: $redColor;
+}
+.b-alert_info{
+    background-color: $blueColor;
+}
+.b-alert__header{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & a{
+        color: inherit !important;
+    }
+}
+.b-alert__icon{
+    cursor: pointer;
+    color: $lightColor;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.b-alert__title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 100;
+    color: $lightColor;
+    margin-top: 2px;
+}
+.b-alert__close{
+    cursor: pointer;
+    color: $lightColor;
+    font-size: 24px;
+    margin-left: auto;
+}
+.b-alert__body{
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: $lightColor;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 100;
+    text-align: justify;
+}
