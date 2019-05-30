@@ -1,0 +1,69 @@
+.b-file-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .2);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.b-file-input_small{
+    flex-direction: row;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .2);
+    & .b-file-input__placeholder{
+        padding-bottom: 45%;
+    }
+    & .b-file-input__action{
+        box-shadow: -10px 0 10px -5px rgba(0, 0, 0, .05);
+    }
+    & .b-file-input__action{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    & .b-file-input__label{
+        text-align: center;
+        margin-top: 10px;
+    }
+    & .b-file-input__add{
+        font-size: 26px;
+    }
+}
+.b-file-input__placeholder{
+    width: 100%;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/fileinput.jpg);
+    cursor: pointer;
+}
+.b-file-input__input{
+    display: none;
+}
+.b-file-input__action{
+    padding: 15px 20px;
+    box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, .05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+}
+.b-file-input__label{
+    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.b-file-input__add{
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.b-file-input__delete{
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}

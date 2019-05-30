@@ -1,0 +1,30 @@
+.b-logo{
+    animation: logoAnim 10s ease-in-out infinite;
+    & img{
+        width: 100%;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+    }
+    @include md-block{
+        width: 100px;
+    }
+    @include sm-block{
+        width: 80px;
+    }
+}
+@keyframes logoAnim{
+    0%{
+        transform: rotateY(0deg)
+    }
+    40%{
+        transform: rotateY(0deg)
+    }
+    50%{
+        transform: rotateY(360deg)
+    }
+    60%{
+        transform: rotateY(360deg)
+    }
+    100%{
+        transform: rotateY(360deg)
+    }
+}

@@ -10,9 +10,18 @@
 }
 // text colors end
 
+// text uppercase
+._text-upper{
+    text-transform: uppercase;
+}
+// text uppercase end
+
 // text sizes
 ._text-bold{
     font-weight: 900;
+}
+._text-reg{
+    font-weight: 500;
 }
 ._text-thin{
     font-weight: 100;
@@ -20,12 +29,13 @@
 // text sizes end
 
 // text align
-._text-center{
+._text-center, .aligncenter{
     text-align: center;
 }
-._text-right{
+._text-right, .alignright{
     text-align: right;
 }
+
 // text align end
 
 // background color
@@ -105,7 +115,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.rel-right{
+._rel-right{
     position: relative;
     left: 100%;
     transform: translateX(-100%);

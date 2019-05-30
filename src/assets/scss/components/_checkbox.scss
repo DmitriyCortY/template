@@ -1,0 +1,44 @@
+.b-checkbox{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.b-chackbox__rect{
+    width: 18px;
+    height: 18px;
+    border: 1px solid $darkColor;
+    margin-right: 10px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: 75%;
+        // transform: translate(-50% ,-50%) rotate(-45deg) skew(-10deg);
+        transform: translate(-50% ,50%) rotate(-45deg) skew(0);
+        width: 90%;
+        height: 50%;
+        background-color: transparent;
+        border-bottom: 1px solid $darkColor;
+        border-left: 1px solid $darkColor;
+        opacity: 0;
+        transition: all 0.16s ease-in-out;
+    }
+}
+.b-checkbox__label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    user-select: none;
+    cursor: pointer;
+}
+.b-checkbox__input{
+    display: none;
+}
+.b-checkbox__input:checked ~ .b-checkbox__label .b-chackbox__rect::after {
+    opacity: 1;
+    transform: translate(-50% ,-50%) rotate(-45deg) skew(-10deg);
+}

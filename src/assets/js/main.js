@@ -235,6 +235,38 @@ new TOT_delete_alert()
 
 
 
+class Fileinput {
+    constructor(config) {
+        this.input = config.input
+        this.selectImage = null
+        this.urlPhoto = ''
+        this.placeholder = null
+
+
+        this.init()
+    }
+    init() {
+
+        this.input.on('change', e => {
+
+            let reader = new FileReader()
+            this.selectImage = e.target.files[0];
+
+            this.placeholder = $(e.target).parent().children('.b-file-input__placeholder')
+
+            reader.onload = e => {
+                this.urlPhoto = e.target.result
+                this.placeholder.css('backgroundImage', 'url(' + this.urlPhoto + ')')
+            }
+
+            reader.readAsDataURL(this.selectImage)
+        })
+    }
+}
+
+new Fileinput({
+    input: $('.b-file-input')
+})
 class Modal {
     constructor(config) {
         this.modalName = config.modalname
@@ -255,4 +287,35 @@ class Modal {
 new Modal({
     modalname: 'test'
 })
+$(document).ready(e => {
+    $(".b-preloader").fadeOut(400, function () {
+        $(".b-preloader").remove()
+    });
+})
+$('.b-field__see-pass').on('click', e => {
+
+    let contextInput = $(e.target).parent().children('.b-field__input')
+    let iconPlace = $(e.target).children('span')
+
+    toogleInputType(contextInput, 'password', 'text')
+    toogleClassIcon(iconPlace, 'pe-7s-lock', 'pe-7s-unlock')
+})
+function toogleInputType(input, type1, type2) {
+    if (input.attr('type') === type1) {
+        input.attr('type', type2)
+    }
+    else if (input.attr('type') === type2) {
+        input.attr('type', type1)
+    }
+}
+function toogleClassIcon(place, class1, class2) {
+    if (place.hasClass(class1)) {
+        place.removeClass(class1)
+        place.addClass(class2)
+    }
+    else if (place.hasClass(class2)) {
+        place.removeClass(class2)
+        place.addClass(class1)
+    }
+}
 //# sourceMappingURL=main.js.map

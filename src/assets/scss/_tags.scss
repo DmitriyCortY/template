@@ -1,51 +1,92 @@
 h1{
+    font-size: 48px;
+    line-height: 52px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+h2{
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+h3{
     font-size: 30px;
     line-height: 34px;
     margin-top: 8px;
     margin-bottom: 8px;
-    flex-wrap: 900;
+    
 }
-h2{
-    font-size: 27px;
-    line-height: 31px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    flex-wrap: 900;
-}
-h3{
+h4{
     font-size: 24px;
     line-height: 28px;
     margin-top: 8px;
     margin-bottom: 8px;
-    flex-wrap: 900;
-}
-h4{
-    font-size: 21px;
-    line-height: 25px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    flex-wrap: 900;
+    
 }
 h5{
     font-size: 18px;
     line-height: 22px;
     margin-top: 8px;
     margin-bottom: 8px;
-    flex-wrap: 900;
+    
 }
 h6{
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px;
     margin-bottom: 8px;
-    flex-wrap: 900;
+    
 }
 p{
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 strong{
     font-weight: 900;
+}
+
+ol, ul, li{
+    list-style-type: none;
+    list-style: none;
+}
+
+ol, ul{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+li{
+    font-size: 15px;
+    line-height: 19px;
+}
+
+ol{
+    counter-reset: idNumListItem;
+    & li{
+        &:before{
+            counter-increment: idNumListItem;
+            content: counter(idNumListItem) ") ";
+            margin-right: 5px;
+            text-align: right;
+            width: 15px;
+            display: inline-block;
+        }
+    }
+    
+}
+ul{
+    &  li{
+        &:before{
+            content: "-";
+            margin-right: 8px;
+            text-align: right;
+            width: 12px;
+            display: inline-block;
+        }
+    }
 }

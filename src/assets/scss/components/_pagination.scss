@@ -1,0 +1,68 @@
+.b-pagination{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    user-select: none;
+}
+.b-pagination__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.b-pagination__list-item{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid $darkColor;
+    margin-left: 12px;
+    & a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: $darkColor;
+        & span{
+            font-size: 36px;
+        }
+    }
+    &:before{
+        display: none;
+    }
+    &:first-child{
+        margin-left: 0;
+    }
+    @include xs-block{
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+    }
+}
+.b-pagination__list-item_active{
+    position: relative;
+    &:after{
+        content: '';
+        width: calc(100% + 2px);
+        height: 1px;
+        position: absolute;
+        bottom: -5px;
+        left: -1px;
+        background-color: $darkColor;
+        animation: paginationLinkActiveAnim 0.8s linear infinite alternate;
+    }
+}
+.b-pagination__list-item_disabled{
+    pointer-events: none;
+}
+.b-pagination__list-item_non-border{
+    border: 1px solid transparent;
+}
+@keyframes paginationLinkActiveAnim{
+    0%{
+        transform: translateY(-1px)
+    }
+    100%{
+        transform: translateY(1px)
+    }
+}

@@ -1,0 +1,69 @@
+.b-textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+.b-textarea_height-185{
+    & .b-textarea__input{
+        height: 185px;
+    }
+}
+.b-textarea_opacity{
+    & .b-textarea__input{
+        background: transparent;
+    }
+}
+.b-textarea_valid-false{
+    & .b-textarea__label{
+        animation: labelFailValid 0.7s ease-in-out;
+        color: $redColor;
+    }
+    & .b-textarea__input{
+        color: $redColor;
+        border: 1px solid $redColor;
+        &::placeholder {
+            color: $redColor;
+        }
+    }
+    & .b-textarea__valid{
+        display: block;
+        color: $redColor;
+        animation: validFailValid 0.7s ease-in-out;
+    }
+}
+.b-textarea__label{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.b-textarea__input{
+    border: 1px solid $darkColor;
+    padding: 15px 12px;
+    margin-bottom: 10px;
+    outline: none;
+    height: 100px;
+    resize: none;
+    &::placeholder {
+        color: $darkColor;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+.b-textarea__valid{
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 13px;
+    display: none;
+}
+.b-textarea__hint{
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 13px;
+}

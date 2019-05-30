@@ -1,5 +1,13 @@
 
-.b-page {}
+.b-page {
+    display: flex;
+    flex-direction: row;
+    min-width: 360px;
+    overflow: hidden;
+}
+.b-page__sidebar{}
 .b-page__header{}
 .b-page__main{}
 .b-page__footer{}
+
+
