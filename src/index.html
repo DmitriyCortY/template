@@ -108,27 +108,4 @@
 
 
 
-	<script src="./assets/lib/jquery-3.3.1.min.js"></script>
-	<script src="./assets/lib/jquery.material.form/jquery.material.form.min.js"></script>
-	<script src="./assets/lib/wow/wow.js"></script>
-	<script src="./assets/lib/fancybox/jquery.fancybox.min.js"></script>
-
-	<script src="./assets/js/main.js"></script>
-
-	<script>
-		new TOT_alert({
-			type: 'info',
-			title: 'Сообщение для вас',
-			body: `Задача организации, в особенности же рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы
-			обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что дальнейшее развитие различных
-			форм деятельности позволяет оценить значение новых предложений. С другой стороны постоянный количественный рост.`,
-			place: $('[data-append-alert]'),
-			onInsert: function () {
-				console.log('алерт добавился')
-			},
-			// icon: '<div class="b-alert__icon pe-7s-attention"></div>'
-		})
-	</script>
-</body>
-
-</html>
+	@@include('./html-view/footer.html')
