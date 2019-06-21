@@ -1,0 +1,134 @@
+$columns: 12;
+
+$br1600: 1600px;
+$br1440: 1440px;
+$br1170: 1170px;
+$br960: 960px;
+$br780: 780px;
+$br560: 560px;
+$br440: 440px;
+
+$offset: 15px;
+
+$fz_radio_normal: 1;
+$fz_radio_laptop: 0.95;
+$fz_radio_lg: 0.9;
+$fz_radio_md: 0.85;
+$fz_radio_sm: 0.8;
+$fz_radio_xs: 0.85;
+
+@mixin wrapper(){
+    max-width: $br1600;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin row(){
+    margin-left: $offset * -1;
+    margin-right: $offset * -1;
+    width: 100%;
+}
+@mixin row-padding(){
+    padding-left: $offset;
+    padding-right: $offset;
+    margin-left: $offset * -1;
+    margin-right: $offset * -1;
+    width: 100%;
+}
+@mixin col($number){
+    width: calc(((100% / #{$columns}) * #{$number}) - #{$offset} * 2);
+    margin-left: $offset;
+    margin-right: $offset;
+}
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@mixin flex-colm(){
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@mixin flex-center{
+    justify-content: center;
+    align-items: center;
+}
+@mixin offset-left($number){
+    margin-left: calc((100% / $columns) * #{number});        
+}
+@mixin offset-right($number){
+    margin-right: calc(((100% / $columns) * #{number}) + $offset);    
+}
+
+@mixin fz($fz, $lh){
+    font-size: #{$fz};
+    line-height: #{$lh};
+    @media screen and (max-width: $br1440){
+        font-size: calc(#{$fz} * #{$fz_radio_laptop});
+        line-height: calc(#{$lh} * #{$fz_radio_laptop});
+    }
+    @media screen and (max-width: $br1170){
+        font-size: calc(#{$fz} * #{$fz_radio_lg});
+        line-height: calc(#{$lh} * #{$fz_radio_lg});
+    }
+    @media screen and (max-width: $br960){
+        font-size: calc(#{$fz} * #{$fz_radio_md});
+        line-height: calc(#{$lh} * #{$fz_radio_md});
+    }
+    @media screen and (max-width: $br780){
+        font-size: calc(#{$fz} * #{$fz_radio_sm});
+        line-height: calc(#{$lh} * #{$fz_radio_sm});
+    }
+    @media screen and (max-width: $br560){
+        font-size: calc(#{$fz} * #{$fz_radio_xs});
+        line-height: calc(#{$lh} * #{$fz_radio_xs});
+    }
+}
+
+@mixin xl(){
+    @media screen and (max-width: $br1600){
+        @content;
+    }
+}
+@mixin laptop(){
+    @media screen and (max-width: $br1440){
+        @content;
+    }
+}
+@mixin lg(){
+    @media screen and (max-width: $br1170){
+        @content;
+    }
+}
+@mixin md(){
+    @media screen and (max-width: $br960){
+        @content;
+    }
+}
+@mixin sm(){
+    @media screen and (max-width: $br780){
+        @content;
+    }
+}
+@mixin xs(){
+    @media screen and (max-width: $br560){
+        @content;
+    }
+}
+@mixin mobile(){
+    @media screen and (max-width: $br440){
+        @content;
+    }
+}
+@mixin from($min_width){
+    @media screen and (min-width: $min_width){
+        @content;
+    }
+}
+
+@mixin to($max_width){
+    @media screen and (max-width: $max_width){
+        @content;
+    }
+}

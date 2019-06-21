@@ -1,5 +1,6 @@
 // Vendor-import
-@import "../lib/smart-grid.scss";
+@import "_grid.scss";
+// @import "../lib/smart-grid.scss";
 
 // Own-import 
 @import "_tags";
@@ -8,6 +9,18 @@
 @import "_glob-modifiers";
 
 // Components-import 
+@import "sections/_about";
+@import "sections/_advantages";
+@import "sections/_calculator";
+@import "sections/_contacts";
+@import "sections/_cover";
+@import "sections/_how-we-work";
+@import "sections/_info";
+@import "sections/_seo";
+@import "sections/_services";
+@import "sections/_story";
+@import "sections/_video";
+
 @import "components/_page";
 @import "components/_main";
 @import "components/_header";
@@ -29,6 +42,11 @@
 @import "components/_table";
 @import "components/_form";
 @import "components/_preloader";
+@import "components/_lang";
+@import "components/_phone-number";
+@import "components/_mail";
+
+
 
 .b-section{
     width: 100%;
