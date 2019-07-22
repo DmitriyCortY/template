@@ -1,86 +1,118 @@
-.b-modal{
+.b-modal-box  {
+    position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
     top: 0;
     left: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-.b-modal_open{
-    visibility: visible;
-    .b-modal__inner{
-        transform: translate(-50%, -50%);
-    }
-}
-
-.b-modal__close{
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    padding: 8px;
-    border-radius: 50%;
-    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+    opacity: 0;
+    transition: all 0.4s ease-in-out
+  }
+  .b-modal-box_df{
+    display: flex;
+  }
+  .b-modal-box_op1{
+    opacity: 1;
+  }
+  .b-modal__overlay{
     position: absolute;
-    right: 15px;
-    top: 15px;
-    transition: all 0.15s ease-in-out;
-    &:hover{
-        transform: scale(1.05);
-    }
-    &:before, &:after{
-        content: '';
-        position: absolute;
-        top: 50%;   
-        left: 50%;
-        width: 100%;
-        height: 10%;
-        background-color: $darkColor;
-    }
-    &:before{
-        transform: translate(-50%, -50%) rotate(-45deg);
-    }
-    &:after{
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-}
-.b-modal__inner{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 150%);
+    left: 0;
+    top: 0;
     width: 100%;
-    max-width: 1170px;
     height: 100%;
-    max-height: 768px;
-    background: $lightColor;
-    padding: 70px 35px;
-    transition: all 0.35s ease-in-out; 
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+  }
+  $modalWidth: 1170px;
+  $modalWidthMedium: 960px;
+  $modalWidthSmall: 768px;
+  .b-modal{
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #fff;
+    padding: 15px;
+    width: 90%;
+    height: 90%;
+    max-width: $modalWidth;
+    max-height: calc(#{$modalWidth} / 1.777);
+    box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+  }
+  .b-modal_scale1{
+    transform: scale(1);
+  }
+  .b-modal_medium{
+    max-width: $modalWidthMedium;
+    max-height: calc(#{$modalWidthMedium} / 1.777);
+  }
+  .b-modal_small{
+    max-width: $modalWidthSmall;
+    max-height: calc(#{$modalWidthSmall} / 1.777);
+  }
+  .b-modal__inner{
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
-    @media screen and (max-width: 1200px){
-        width: 85%;
-        height: 85%;
-        padding: 60px 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .b-modal__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .b-modal__title{
+    width: 100%;
+    max-width: calc(100% - 50px);
+    margin-right: 10px;
+  }
+  .b-modal__close{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      background-color: #363636;
+      transform: translateY(-50%) rotate(-45deg);
+      border-radius: 1px;
     }
-    @media screen and (max-width: 960px){
-        width: 90%;
-        height: 90%;
-        max-height: 100%;
-        padding: 50px 25px;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      background-color: #363636;
+      transform: translateY(-50%) rotate(45deg);
+      border-radius: 1px;
     }
-    @media screen and (max-width: 768px){
-        width: 95%;
-        height: 95%;
-        padding: 45px 20px;
+    &:hover{
+      transform: rotate(90deg);
+      opacity: 0.8;
     }
-    @media screen and (max-width: 508px){
-        width: 100%;
-        height: 100%;
-        padding: 40px 15px;
-    }
-}
-.b-modal__header{}
-.b-modal__content{}
+  }
+  .b-modal__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }

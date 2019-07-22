@@ -268,7 +268,7 @@ $fields: 15px;
     }
 }
 
-@mixin lg-block(){
+@mixin lg(){
     @media screen and (max-width: $break_lg){
         @content;
     }
@@ -280,7 +280,7 @@ $fields: 15px;
     }
 }
 
-@mixin md-block(){
+@mixin md(){
     @media screen and (max-width: $break_md){
         @content;
     }
@@ -292,7 +292,7 @@ $fields: 15px;
     }
 }
 
-@mixin sm-block(){
+@mixin sm(){
     @media screen and (max-width: $break_sm){
         @content;
     }
@@ -304,7 +304,7 @@ $fields: 15px;
     }
 }
 
-@mixin xs-block(){
+@mixin xs(){
     @media screen and (max-width: $break_xs){
         @content;
     }

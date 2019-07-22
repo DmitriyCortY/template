@@ -6,7 +6,7 @@
     **************************************************
 
     nickname: Dmitriy_Corty
-    organization: "Totonis.com"
+    organization: "totonis.com"
     date: 25.06.2018
     email: dmitriy.corty@gmail.com
 
@@ -29,11 +29,12 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     clean = require('gulp-clean'),
     fileinclude = require('gulp-file-include'),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    sassGlob = require('gulp-sass-glob');
 
 var serverConfig = {
     server: {
-        baseDir: "dev" 								// The root folder for the server
+        baseDir: "dev" 							// The root folder for the server
     },
     ui: {
         port: 3001 								// Your port, for server settings
@@ -129,6 +130,7 @@ gulp.task('html', function () {
 
 gulp.task('sass', function () {
     return gulp.src(path.src.scss)
+        .pipe(sassGlob())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))	// Сompile scss to css
         .pipe(mediaGroup())

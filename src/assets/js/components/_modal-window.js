@@ -1,20 +1,44 @@
 class Modal {
-    constructor(config) {
-        this.modalName = config.modalname
-
+    constructor(c) {
+        this.modalName = c.name
+        this.modalBox = $('[data-modal-window="' + this.modalName + '"]')
+        this.modal = this.modalBox.children('.b-modal')
+        this.trigger = $('[data-modal-trigger="' + this.modalName + '"]')
+        this.flag = false
+        this.init()
+    }
+    init() {
         this.handler()
     }
     handler() {
-        $('[data-modal-trigger="' + this.modalName + '"]').on('click', e => {
-            this.toggleClass()
+        this.trigger.on('click', e => {
+            if (this.flag === false) {
+                this.open()
+                this.flag = true
+            } else if (this.flag === true) {
+                this.close()
+                this.flag = false
+            }
         })
     }
-    toggleClass() {
-        $('[data-modal-window="' + this.modalName + '"]').toggleClass('b-modal_open')
-        $('body').toggleClass('body_overfloy-hidden')
+    open() {
+        this.modalBox.addClass('b-modal-box_df')
+        $('.b-page').css('filter', 'blur(2px)')
+        setTimeout(e => {
+            this.modalBox.addClass('b-modal-box_op1')
+            setTimeout(e => {
+                this.modal.addClass('b-modal_scale1')
+            }, 200)
+        }, 50)
+    }
+    close() {
+        this.modal.removeClass('b-modal_scale1')
+        setTimeout(e => {
+            $('.b-page').css('filter', 'none')
+            this.modalBox.removeClass('b-modal-box_op1')
+            setTimeout(e => {
+                this.modalBox.removeClass('b-modal-box_df')
+            }, 200)
+        }, 400)
     }
 }
-
-new Modal({
-    modalname: 'test'
-})

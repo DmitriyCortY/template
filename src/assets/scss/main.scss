@@ -8,43 +8,46 @@
 @import "_var";
 @import "_glob-modifiers";
 
-// Components-import 
-@import "sections/_about";
-@import "sections/_advantages";
-@import "sections/_calculator";
-@import "sections/_contacts";
-@import "sections/_cover";
-@import "sections/_how-we-work";
-@import "sections/_info";
-@import "sections/_seo";
-@import "sections/_services";
-@import "sections/_story";
-@import "sections/_video";
+// Sections-import 
+// @import "sections/_about";
+// @import "sections/_advantages";
+// @import "sections/_calculator";
+// @import "sections/_contacts";
+// @import "sections/_cover";
+// @import "sections/_how-we-work";
+// @import "sections/_info";
+// @import "sections/_seo";
+// @import "sections/_services";
+// @import "sections/_story";
+// @import "sections/_video";
+@import "sections/**/*.scss";
 
-@import "components/_page";
-@import "components/_main";
-@import "components/_header";
-@import "components/_footer";
-@import "components/_menu";
-@import "components/_modal";
-@import "components/_title";
-@import "components/_subtitle";
-@import "components/_description";
-@import "components/_input";
-@import "components/_checkbox";
-@import "components/_radiobutton";
-@import "components/_textarea";
-@import "components/_button";
-@import "components/_logo";
-@import "components/_alert";
-@import "components/_pagination";
-@import "components/_file-input";
-@import "components/_table";
-@import "components/_form";
-@import "components/_preloader";
-@import "components/_lang";
-@import "components/_phone-number";
-@import "components/_mail";
+// Components-import 
+// @import "components/_page";
+// @import "components/_main";
+// @import "components/_header";
+// @import "components/_footer";
+// @import "components/_menu";
+// @import "components/_modal";
+// @import "components/_title";
+// @import "components/_subtitle";
+// @import "components/_description";
+// @import "components/_input";
+// @import "components/_checkbox";
+// @import "components/_radiobutton";
+// @import "components/_textarea";
+// @import "components/_button";
+// @import "components/_logo";
+// @import "components/_alert";
+// @import "components/_pagination";
+// @import "components/_file-input";
+// @import "components/_table";
+// @import "components/_form";
+// @import "components/_preloader";
+// @import "components/_lang";
+// @import "components/_phone-number";
+// @import "components/_mail";
+@import "components/**/*.scss";
 
 
 

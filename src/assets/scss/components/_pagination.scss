@@ -33,7 +33,7 @@
     &:first-child{
         margin-left: 0;
     }
-    @include xs-block{
+    @include xs{
         font-size: 12px;
         width: 30px;
         height: 30px;

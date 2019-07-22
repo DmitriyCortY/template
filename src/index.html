@@ -1,111 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./html-view/head.html')
+@@include('./html-view/preloader.html')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>DC Template</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="./assets/lib/jquery.material.form/jquery.material.form.min.css">
-	<link rel="stylesheet" href="./assets/lib/wow/animate.css">
-	<link rel="stylesheet" href="./assets/lib/fancybox/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="./assets/lib/normalize.css">
-	<link rel="stylesheet" href="./assets/lib/pe-icon-7-stroke.css">
-	<link rel="stylesheet" href="./assets/css/main.css">
-</head>
-
-<body>
-	<section class="b-page">
-		<header class="b-header b-page__header" style="height: 10px; background: #000;">
-			<div class="b-header-desctop b-header__desctop"></div>
-
-			<div class="b-header-mobile b-header__mobile"></div>
-		</header>
-
-		<main class="b-main b-page__main">
-			<div class="b-cover b-main__section">
-				<div class="b-cover__inner">
-					<div class="b-main__section" data-append-alert>
-						<div class="b-alert b-alert_success" data-alert="97">
-							<div class="b-alert__header">
-								<div class="b-alert__icon pe-7s-bell"></div>
-								<div class="b-alert__title">Успешная операция</div>
-								<div class="b-alert__close pe-7s-close-circle" data-alert-close="97"></div>
-							</div>
-							<div class="b-alert__body">
-								Задача организации, в особенности же рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы
-								обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что дальнейшее развитие различных
-								форм деятельности позволяет оценить значение новых предложений. С другой стороны постоянный количественный рост.
-							</div>
-						</div>
-
-						<div class="b-alert b-alert_success" data-alert="98">
-							<div class="b-alert__header">
-								<div class="b-alert__icon pe-7s-bell"></div>
-								<div class="b-alert__title">Успешная операция</div>
-								<div class="b-alert__close pe-7s-close-circle" data-alert-close="98"></div>
-							</div>
-						</div>
-
-						<div class="b-alert b-alert_danger" data-alert="99">
-							<div class="b-alert__header">
-								<div class="b-alert__icon pe-7s-attention"></div>
-								<div class="b-alert__title">Хьюстон, у нас проблемы!</div>
-								<div class="b-alert__close pe-7s-close-circle" data-alert-close="99"></div>
-							</div>
-						</div>
-
-						<div class="b-alert b-alert_info" data-alert="100">
-							<div class="b-alert__header">
-								<div class="b-alert__icon pe-7s-mail"></div>
-								<div class="b-alert__title">Сообщение для вас</div>
-								<div class="b-alert__close pe-7s-close-circle" data-alert-close="100"></div>
-							</div>
-							<div class="b-alert__body">
-								Задача организации, в особенности же рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы
-								обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что дальнейшее развитие различных
-								форм деятельности позволяет оценить значение новых предложений. С другой стороны постоянный количественный рост.
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<footer class="b-footer b-page__footer">
-
-		</footer>
-	</section>
-
-	<div data-modal-trigger="test">click!!</div>
-
-
-
-	<div class="b-modals">
-		<div class="b-modal" data-modal-window="test">
-			<div class="b-modal__inner">
-				<div class="b-modal__close" data-modal-trigger="test"></div>
-				<div class="b-modal__header b-title">
-					Заказ обратного звонка
-				</div>
-				<div class="b-modal__content">
-					<form action="#">
-						<input type="text">
-						<br>
-						<input type="text">
-						<br>
-						<input type="text">
-						<br>
-						<input type="submit" value="Заказать">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
+<section class="b-page">
+	@@include('./html-view/header.html')
+	<main class="b-main b-page__main">
+		@@include('./html-view/sections/cover.html')
+	</main>
 	@@include('./html-view/footer.html')
+	<div class="asd" data-modal-trigger="test">asdf</div>
+</section>
+
+@@include('./html-view/modals.html')
+@@include('./html-view/footer.html')
+@@include('./html-view/script-include.html')

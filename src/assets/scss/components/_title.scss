@@ -5,11 +5,11 @@
     margin-bottom: 15px;
     margin-top: 15px;
     text-transform: uppercase;
-    @include sm-block{
+    @include sm{
         font-size: 32px;
         line-height: 40px;
     }
-    @include xs-block{
+    @include xs{
         font-size: 30px;
         line-height: 34px;
     }

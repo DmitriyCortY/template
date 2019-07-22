@@ -4,22 +4,46 @@
     background-color: #fff;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flex-colm;
+    @include flex-center;
 }
-.b-preloader__logo{
-    animation: logoAnim2 4s ease-in-out infinite !important;
+.b-paceholder__loader{
+    @include flex-row;
 }
-@keyframes logoAnim2{
+.b-paceholder__block{
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    animation: preloaderAnim 1.8s  ease-in-out infinite;
+    &:nth-child(1){
+        background: linear-gradient(to top, #d6caab, #a1967e);
+        animation-delay: 0s;
+    }
+    &:nth-child(2){
+        background: linear-gradient(to left, #d6caab, #a1967e);
+        animation-delay: .2s;
+    }
+    &:nth-child(3){
+        background: linear-gradient(to bottom, #d6caab, #a1967e);
+        animation-delay: 0.4s;
+    }
+    &:nth-child(4){
+        background: linear-gradient(to right, #d6caab, #a1967e);
+        animation-delay: 0.6s;
+    }
+    &:nth-child(5){
+        background: linear-gradient(to top, #d6caab, #a1967e);
+        animation-delay: 0.8s;
+    }
+}
+@keyframes preloaderAnim{
     0%{
-        transform: rotateY(0deg)
+        transform: translateY(0px) rotate(0deg);
     }
-    50%{
-        transform: rotateY(360deg)
+    25%{
+        transform: translateY(-15px) rotate(90deg);
     }
-    100%{
-        transform: rotateY(360deg)
+    50%, 100%{
+        transform: translateY(0) rotate(90deg);
     }
 }

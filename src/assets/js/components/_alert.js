@@ -1,4 +1,20 @@
-/* static hahahahah*/ let __counterAlert = 0;
+/* static hahahahah */ let __counterAlert = 0;
+
+//  ********* example *********
+// new TOT_alert({
+//     type: 'info',
+//     title: 'Сообщение для вас',
+//     body: `Задача организации, в особенности же рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы
+// обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что дальнейшее развитие различных
+// форм деятельности позволяет оценить значение новых предложений. С другой стороны постоянный количественный рост.`,
+//     place: $('[data-append-alert]'),
+//     onInsert: function () {
+//         console.log('алерт добавился')
+//     },
+//     // icon: '<div class="b-alert__icon pe-7s-attention"></div>'
+// })
+//  ********* example *********
+
 class TOT_alert {
     constructor(config) {
         this.type = config.type // (string) success, dander, info
