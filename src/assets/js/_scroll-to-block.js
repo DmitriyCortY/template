@@ -7,14 +7,14 @@ new ScrollToBlock({
 })
 
 */
-class ScrollToBlock{
-	constructor(config){
+class ScrollToBlock {
+	constructor(config) {
 
-		this.trigger 	= $(config.trigger)
-		this.anchor 	= $(config.anchor)
-		this.offset 	= config.offset || 0
-		this.speed 		= config.speed || 600
-		this.place 		= $('html')
+		this.trigger = $(config.trigger)
+		this.anchor = $(config.anchor)
+		this.offset = config.offset || 0
+		this.speed = config.speed || 600
+		this.place = $('html')
 
 		this.callHandler()
 	}
@@ -39,7 +39,7 @@ class ScrollToBlock{
 	calcPosition() {
 
 		let anchorOffsetTop = this.anchor.eq(0).offset().top
-		let calc			= anchorOffsetTop - this.offset		
+		let calc = anchorOffsetTop - this.offset
 		return calc
 	}
 }

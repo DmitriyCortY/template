@@ -1,0 +1,42 @@
+.b-tabs {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b-tab {
+  margin-bottom: 10px;
+}
+
+.b-tablast-child {
+  margin-bottom: 0;
+}
+
+.b-tab__title {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+
+  background-color: #ffff00;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.b-tab__title:after {
+  content: ">";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  transform: rotate(90deg);
+}
+
+.b-tab__content {
+  border: 1px solid #fafafa;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.b-tab__content p {
+  padding: 15px;
+}

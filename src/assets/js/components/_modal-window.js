@@ -39,6 +39,6 @@ class Modal {
             setTimeout(e => {
                 this.modalBox.removeClass('b-modal-box_df')
             }, 200)
-        }, 400)
+        }, 250)
     }
 }
