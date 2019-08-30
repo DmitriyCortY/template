@@ -53,3 +53,39 @@ a:active {
   background-color: $darkColor;
   color: $lightColor;
 }
+
+.material-input input {
+  color: $darkColor;
+  font-weight: 700;
+}
+.material .material-input label {
+  color: rgba($darkColor, 0.6);
+  font-weight: 400;
+  font-style: italic;
+}
+.material .error:focus ~ label,
+.material .material-input .filled ~ label,
+.material .material-input :focus ~ label {
+  color: $darkColor;
+  font-weight: 700;
+}
+.material .material-input input,
+.material .material-input textarea {
+  border-bottom: 1px solid rgba($darkColor, 0.6);
+}
+.material .material-bar:after,
+.material .material-bar:before {
+  content: "";
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: $darkColor;
+}
+.material .material-input {
+  background-color: transparent;
+  margin-bottom: 2px;
+}
+.material .material-input input {
+  background-color: transparent;
+}

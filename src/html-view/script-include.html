@@ -1,4 +1,5 @@
 <script src="./assets/lib/jquery-3.3.1.min.js"></script>
+<script src="./assets/lib/jquery.validate.min.js"></script>
 <script src="./assets/lib/jquery.material.form/jquery.material.form.min.js"></script>
 <script src="./assets/lib/wow/wow.js"></script>
 <script src="./assets/lib/fancybox/jquery.fancybox.min.js"></script>
@@ -7,10 +8,23 @@
 
 <script>
     jQuery(document).ready(function ($) {
-        new Modal({
-            name: 'test'
+
+        var tabs = new TABS({
+            trigger: $('[data-tab-trigger]'), // jQuery.object
+            content: $('[data-tab-content]'), // jQuery.object
+            triggerClass: 'active', // srting
+            contentClass: 'open' // srting
         })
-        new TABS({}).init()
+        tabs.init()
+
+        if ($('.b-form').length > 0) {
+            for (var i = 0; i < $('.b-form').length; i++) {
+                $('.b-form').eq(i).materialForm();
+                $('.b-form').eq(i).validate({
+                    errorPlacement: function (error, element) { }
+                });
+            }
+        }
     })
 </script>
 </body>

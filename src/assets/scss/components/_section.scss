@@ -37,4 +37,41 @@
 }
 .b-section__content {
   position: relative;
+  @include flex-colm;
+  & p:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+.b-section__title {
+  margin-bottom: 40px;
+  @include lg {
+    margin-bottom: 30px;
+  }
+  @include md {
+    margin-bottom: 20px;
+  }
+}
+.b-section__separator {
+  @extend .b-section__title;
+}
+.b-section__row {
+  @include flex-row;
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+.b-section__row_with-cols {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px);
+}
+.b-section__col {
+  @include col(12);
+  &_6 {
+    @include col(6);
+  }
+}
+.b-section__form {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

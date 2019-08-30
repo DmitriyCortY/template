@@ -1,25 +1,16 @@
 .b-button {
   display: inline-block;
   border: none;
-  cursor: pointer;
-  padding: 15px 35px;
-  @include fz(16px, 16px);
-  font-weight: 400;
   outline: none;
-}
-.b-button_underline {
-  position: relative;
-  &:after {
-    content: "";
-    width: calc(100% + 2px);
-    height: 1px;
-    position: absolute;
-    bottom: -5px;
-    left: -1px;
-    background-color: #262626;
-    animation: paginationLinkActiveAnim 0.8s linear infinite alternate;
+  cursor: pointer;
+  padding: 20px 50px;
+  @include fz(16px, 16px);
+  text-align: center;
+  @include sm {
+    padding: 16px 36px;
   }
 }
+
 .b-button_green {
   background-color: $greenColor;
   color: $lightColor;
@@ -36,12 +27,19 @@
   background-color: $darkColor;
   color: $lightColor;
 }
-.b-button_opacity {
-  background-color: transparent;
-}
-.b-button_border-none {
-  border-color: transparent;
-}
+
 .b-button_upper {
   text-transform: uppercase;
+}
+.b-button_radius {
+  border-radius: $radius/3;
+}
+.b-button_shadow {
+  box-shadow: 0 5px 15px 0 rgba(#000, 0.15);
+}
+.b-button_italic {
+  font-style: italic;
+}
+.b-button_bold {
+  font-weight: 700;
 }

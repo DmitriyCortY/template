@@ -1,125 +1,118 @@
-.b-field{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    width: 100%;
+.b-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
 }
-.b-field_opacity{
-    & .b-field__input{
-        background-color: transparent;
-    }
+.b-field_opacity {
+  & .b-field__input {
+    background-color: transparent;
+  }
 }
-.b-field_height-small{
-    & .b-field__input{
-        padding: 12px;
-    }
+.b-field_height-small {
+  & .b-field__input {
+    padding: 12px;
+  }
 }
 
-.b-field_valid-false{
-    & .b-field__label{
-        animation: labelFailValid 0.7s ease-in-out;
-        color: $redColor;
-    }
-    & .b-field__input{
-        color: $redColor;
-        border: 1px solid $redColor;
-        &::placeholder {
-            color: $redColor;
-        }
-    }
-    & .b-field__valid{
-        display: block;
-        color: $redColor;
-        animation: validFailValid 0.7s ease-in-out;
-    }
-}
-.b-field__label{
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.b-field__input{
-    border: 1px solid $darkColor;
-    padding: 15px 12px;
-    margin-bottom: 10px;
-    outline: none;
-    font-size: 14px;
+.b-field_valid-false {
+  & .b-field__label {
+    animation: labelFailValid 0.7s ease-in-out;
+    color: $redColor;
+  }
+  & .b-field__input {
+    color: $redColor;
+    border: 1px solid $redColor;
     &::placeholder {
-        color: $darkColor;
-        font-size: 14px;
-        text-transform: uppercase;
+      color: $redColor;
     }
+  }
+  & .b-field__valid {
+    display: block;
+    color: $redColor;
+    animation: validFailValid 0.7s ease-in-out;
+  }
 }
-.b-field__valid{
-    text-align: right;
+.b-field__label {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.b-field__input {
+  border: 1px solid $darkColor;
+  padding: 15px 12px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  &::placeholder {
+    color: $darkColor;
+    font-size: 14px;
     text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 13px;
-    display: none;
+  }
 }
-.b-field__hint{
-    text-align: right;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-size: 13px;
+.b-field__valid {
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 13px;
+  display: none;
 }
-@keyframes labelFailValid{
-    0%{
-        margin-left: 10px;
-    }
-    25%{
-        
-        margin-left: -8px;
-    }
-    50%{
-        
-        margin-left: 8px;
-    }
-    75%{
-        
-        margin-left: -5px;
-    }
-    100%{
-        margin-left: 0px;
-    }
+.b-field__hint {
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 13px;
 }
-@keyframes validFailValid{
-    0%{
-        
-        margin-right: 10px;
-    }
-    25%{
-        
-        margin-right: -6px;
-    }
-    50%{
-        
-        margin-right: 3px;
-    }
-    75%{
-        
-        margin-right: -2px;
-    }
-    100%{
-        margin-right: 0;
-    }
+@keyframes labelFailValid {
+  0% {
+    margin-left: 10px;
+  }
+  25% {
+    margin-left: -8px;
+  }
+  50% {
+    margin-left: 8px;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
-.b-field__see-pass{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(-20%, -30%);
-    cursor: pointer;
-    padding: 8px;
-    & span{
-        font-size: 20px;
-        pointer-events: none;
-    }
+@keyframes validFailValid {
+  0% {
+    margin-right: 10px;
+  }
+  25% {
+    margin-right: -6px;
+  }
+  50% {
+    margin-right: 3px;
+  }
+  75% {
+    margin-right: -2px;
+  }
+  100% {
+    margin-right: 0;
+  }
 }
-.b-field__see-pass_no-label{
-    transform: translate(-20%, -60%);
+.b-field__see-pass {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-20%, -30%);
+  cursor: pointer;
+  padding: 8px;
+  & span {
+    font-size: 20px;
+    pointer-events: none;
+  }
+}
+.b-field__see-pass_no-label {
+  transform: translate(-20%, -60%);
 }

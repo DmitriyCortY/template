@@ -1,0 +1,88 @@
+.b-mail-box {
+  @include flex-row;
+  align-items: center;
+}
+.b-mail-box_dark {
+  & .b-mail-box__icon {
+    color: rgba(#000, 0.6);
+  }
+}
+.b-mail-box_light {
+  & .b-mail-box__icon {
+    color: rgba(#fff, 0.6);
+  }
+}
+.b-mail-box__icon {
+  @include fz(30px, 30px);
+  margin-right: 10px;
+}
+.b-mail-box__content {
+  @include flex-colm;
+}
+
+/* */
+
+.b-phone-box {
+  @include flex-row;
+  align-items: center;
+}
+.b-phone-box_dark {
+  & .b-phone-box__icon {
+    color: rgba(#000, 0.6);
+  }
+}
+.b-phone-box_light {
+  & .b-phone-box__icon {
+    color: rgba(#fff, 0.6);
+  }
+}
+.b-phone-box__icon {
+  @include fz(30px, 30px);
+  margin-right: 10px;
+}
+.b-phone-box__content {
+  @include flex-colm;
+}
+
+/* */
+
+.b-mail {
+  font-size: 14px;
+  line-height: 1.1;
+  & a {
+    display: block;
+    @include inh;
+  }
+}
+.b-mail_light {
+  color: $lightColor;
+}
+.b-mail_dark {
+  color: $darkColor;
+}
+.b-mail_bold {
+  font-weight: 700;
+}
+
+/* */
+
+.b-phone {
+  font-size: 16px;
+  line-height: 1.1;
+  & a {
+    display: block;
+    @include inh;
+  }
+}
+.b-phone_light {
+  color: $lightColor;
+}
+.b-phone_dark {
+  color: $darkColor;
+}
+.b-phone_bold {
+  font-weight: 700;
+}
+.b-phone_italic {
+  font-style: italic;
+}

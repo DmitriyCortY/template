@@ -90,7 +90,7 @@ $modalWidthSmall: 560px;
     height: 2px;
     background-color: #363636;
     transform: translateY(-50%) rotate(-45deg);
-    border-radius: 1px;
+    border-radius: $radius;
   }
   &:before {
     content: "";
@@ -101,7 +101,7 @@ $modalWidthSmall: 560px;
     height: 2px;
     background-color: #363636;
     transform: translateY(-50%) rotate(45deg);
-    border-radius: 1px;
+    border-radius: $radius;
   }
   &:hover {
     transform: rotate(90deg);

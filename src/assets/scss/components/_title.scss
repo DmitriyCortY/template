@@ -1,28 +1,26 @@
 .b-title {
-    font-size: 36px;
-    font-weight: 100;
-    line-height: 44px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    text-transform: uppercase;
-    @include sm{
-        font-size: 32px;
-        line-height: 40px;
-    }
-    @include xs{
-        font-size: 30px;
-        line-height: 34px;
-    }
+  font-weight: 700;
 }
-.b-title_underline{
-    position: relative;
-    &:after{
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        height: 1px;
-        width: 30%;
-        background-color: $darkColor;
-    }
+.b-title_light {
+  color: $lightColor;
+}
+.b-title_dark {
+  color: $darkColor;
+}
+.b-title_big {
+  @include fz(48px, 60px);
+}
+.b-title_norm {
+  @include fz(30px, 36px);
+}
+.b-title_small {
+}
+.b-title_italic {
+  font-style: italic;
+}
+.b-title_center {
+  text-align: center;
+}
+.b-title_right {
+  text-align: right;
 }
