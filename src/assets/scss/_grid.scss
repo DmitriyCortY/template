@@ -18,24 +18,21 @@ $fz_radio_sm: 0.8;
 $fz_radio_xs: 0.8;
 
 @mixin wrapper() {
-  max-width: $br1600;
+  max-width: calc(#{$br1600} + (#{$offset} * 2));
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@mixin row() {
   padding-left: $offset;
   padding-right: $offset;
-  margin-left: $offset * -1;
-  margin-right: $offset * -1;
+}
+
+@mixin row() {
+  margin: $offset * -1;
   width: calc(100% + (#{$offset} * 2));
 }
 @mixin col($number) {
   width: calc(((100% / #{$columns}) * #{$number}) - #{$offset} * 2);
-  margin-left: $offset;
-  margin-right: $offset;
+  margin: $offset;
 }
 @mixin col-laptop($number) {
   @include laptop() {
@@ -218,4 +215,29 @@ $fz_radio_xs: 0.8;
   @media screen and (max-width: $max_width) {
     @content;
   }
+}
+
+@mixin inh() {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.r-row {
+  @include flex-row;
+  @include row;
+}
+.r-col {
+  @include col(3);
+  @include col-lg(4);
+  @include col-md(6);
+  @include col-sm(10);
+  @include col-xs(11);
+  @include col-mobile(12);
+  @include sm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  height: 150px;
+  background-color: red;
 }

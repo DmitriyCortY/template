@@ -4,12 +4,21 @@
 <section class="b-page">
 	<!-- @@include('./html-view/header.html') -->
 	<main class="b-main b-page__main">
-		@@include('./html-view/sections/cover.html')
+
+		<div class="b-section b-section_padding-norm b-main__section">
+			<div class="b-bg-cover b-section__bg" style=""></div>
+			<div class="b-section__inner">
+				<div class="b-section__content">
+					<!-- content -->
+					@@include('./html-view/sections/cover.html')
+					<!-- content end -->
+				</div>
+			</div>
+		</div>
+
 	</main>
 	<!-- @@include('./html-view/footer.html') -->
-	<div class="asd" data-modal-trigger="test">modal</div>
 </section>
 
 @@include('./html-view/modals.html')
-@@include('./html-view/footer.html')
 @@include('./html-view/script-include.html')

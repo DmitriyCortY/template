@@ -1,69 +1,47 @@
-.b-button{
-    display: inline-block;
-    border-width: 1px;
-    border-style: solid;
-    cursor: pointer;
-    padding: 15px 35px;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 14px;
-    background: $lightColor;
-    border-color: $darkColor;
-    outline: none;
-    color: $darkColor;
-    & span{
-        font-size: 20px;
-        margin-right: 5px;
-        margin-bottom: -5px;
-        margin-top: -5px;
-        transform: translateY(4px);
-    }
-    @include sm{
-        font-size: 13px;
-        padding: 10px 25px;
-    }
+.b-button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 15px 35px;
+  @include fz(16px, 16px);
+  font-weight: 400;
+  outline: none;
 }
-.b-button_underline{
-    position: relative;
-    &:after{
-        content: '';
-        width: calc(100% + 2px);
-        height: 1px;
-        position: absolute;
-        bottom: -5px;
-        left: -1px;
-        background-color: #262626;
-        animation: paginationLinkActiveAnim 0.8s linear infinite alternate;
-    }
+.b-button_underline {
+  position: relative;
+  &:after {
+    content: "";
+    width: calc(100% + 2px);
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    background-color: #262626;
+    animation: paginationLinkActiveAnim 0.8s linear infinite alternate;
+  }
 }
-.b-button_green{
-    background-color: $greenColor;
-    color: $lightColor;
-    border-color: $greenColor;
+.b-button_green {
+  background-color: $greenColor;
+  color: $lightColor;
 }
-.b-button_light-green{
-    background-color: #086938;
-    color: $lightColor;
-    border-color: #086938;
+.b-button_red {
+  background-color: $redColor;
+  color: $lightColor;
 }
-.b-button_red{
-    background-color: $redColor;
-    color: $lightColor;
-    border-color: $redColor;
+.b-button_blue {
+  background-color: $blueColor;
+  color: $lightColor;
 }
-.b-button_blue{
-    background-color: $blueColor;
-    color: $lightColor;
-    border-color: $blueColor;
+.b-button_black {
+  background-color: $darkColor;
+  color: $lightColor;
 }
-.b-button_black{
-    background-color: $darkColor;
-    color: $lightColor;
-    border-color: $darkColor;
+.b-button_opacity {
+  background-color: transparent;
 }
-.b-button_opacity{
-    background-color: transparent;
+.b-button_border-none {
+  border-color: transparent;
 }
-.b-button_border-none{
-    border-color: transparent;
+.b-button_upper {
+  text-transform: uppercase;
 }

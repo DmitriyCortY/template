@@ -1,102 +1,55 @@
 // Vendor-import
 @import "_grid.scss";
-// @import "../lib/smart-grid.scss";
 
-// Own-import 
+// Own-import
 @import "_tags";
 @import "_fonts";
 @import "_var";
 @import "_glob-modifiers";
 
-// Sections-import 
-// @import "sections/_about";
-// @import "sections/_advantages";
-// @import "sections/_calculator";
-// @import "sections/_contacts";
-// @import "sections/_cover";
-// @import "sections/_how-we-work";
-// @import "sections/_info";
-// @import "sections/_seo";
-// @import "sections/_services";
-// @import "sections/_story";
-// @import "sections/_video";
+// Sections-import
 @import "sections/**/*.scss";
 
-// Components-import 
-// @import "components/_page";
-// @import "components/_main";
-// @import "components/_header";
-// @import "components/_footer";
-// @import "components/_menu";
-// @import "components/_modal";
-// @import "components/_title";
-// @import "components/_subtitle";
-// @import "components/_description";
-// @import "components/_input";
-// @import "components/_checkbox";
-// @import "components/_radiobutton";
-// @import "components/_textarea";
-// @import "components/_button";
-// @import "components/_logo";
-// @import "components/_alert";
-// @import "components/_pagination";
-// @import "components/_file-input";
-// @import "components/_table";
-// @import "components/_form";
-// @import "components/_preloader";
-// @import "components/_lang";
-// @import "components/_phone-number";
-// @import "components/_mail";
+// Components-import
 @import "components/**/*.scss";
 
-
-
-.b-section{
-    width: 100%;
-}
-.b-section__inner{
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto 25px auto;
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $firstFont;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $firstFont;
 }
-a, a:hover{
-    text-decoration: none;
+a,
+a:hover {
+  text-decoration: none;
 }
-a:active{
-    color: unset;
-}
-
-.body_overfloy-hidden{
-    overflow: hidden;
-    padding-right: 17px;
-    @media screen and (max-width: 780px){
-        padding-right: inherit;
-    }
+a:active {
+  color: unset;
 }
 
-@include from(960px){
-    ::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
-        background-color: $lightColor;
-        border-radius: 2px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: $greenColor;
-        border-radius: 2px;
-    }
+.body_overfloy-hidden {
+  overflow: hidden;
+  padding-right: 17px;
+  @media screen and (max-width: 780px) {
+    padding-right: inherit;
+  }
+}
+
+@include from(960px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: $lightColor;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $greenColor;
+    border-radius: 2px;
+  }
 }
 
 ::selection {
-    background-color: $darkColor;
-    color: $lightColor;
+  background-color: $darkColor;
+  color: $lightColor;
 }
-

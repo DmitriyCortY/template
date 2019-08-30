@@ -1,8 +1,21 @@
 .b-section {
   position: relative;
+}
+.b-section__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.b-section_padding-small {
+}
+.b-section_padding-norm {
   padding-top: 100px;
   padding-bottom: 100px;
-  @include flex-row;
   @include md {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -16,12 +29,12 @@
     padding-bottom: 40px;
   }
 }
+.b-section_padding-big {
+}
 .b-section__inner {
   position: relative;
   @include wrapper;
 }
 .b-section__content {
   position: relative;
-  @include row;
-  @include flex-row;
 }
