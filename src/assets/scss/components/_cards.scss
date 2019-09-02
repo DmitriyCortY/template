@@ -1,0 +1,21 @@
+.b-cards {
+  @include flex-row;
+  @include row;
+}
+.b-cards_3-col {
+  & .b-card__item {
+    @include col(4);
+    @include col-md(6);
+    @include col-xs(12);
+  }
+}
+.b-cards_4-col {
+  & .b-card__item {
+    @include col(3);
+    @include col-laptop(4);
+    @include col-md(6);
+    @include col-xs(12);
+  }
+}
+.b-card__item {
+}

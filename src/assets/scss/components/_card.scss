@@ -1,0 +1,121 @@
+.b-card {
+  &:hover {
+    & .b-card__image-inner {
+      transform: scale(1);
+    }
+  }
+}
+.b-card_bg-grey {
+  background-color: #fafafa;
+}
+.b-card__header {
+}
+.b-card__header_shadow {
+  box-shadow: 0 5px 15px 0 rgba(#000, 0.15);
+}
+.b-card__image {
+  display: block;
+  padding-bottom: 65%;
+  position: relative;
+  overflow: hidden;
+}
+.b-card__image-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: scale(1.05);
+  transition: $transition;
+}
+.b-card__content {
+  padding: 30px 25px;
+  @include lg {
+    padding: 20px 15px;
+  }
+}
+.b-card__title {
+  margin-bottom: 15px;
+  @include fz(15px, 18px);
+  color: $darkColor;
+  display: block;
+  transition: $transition;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.b-card__title_bold {
+  font-weight: 800;
+}
+.b-card__title_italic {
+  font-style: italic;
+}
+.b-card__subtitle {
+  margin-bottom: 15px;
+  @include fz(14px, 16px);
+  color: $darkColor;
+}
+.b-card__text {
+  @include fz(14px, 20px);
+  color: $darkColor;
+  & p {
+    @include inh;
+  }
+}
+.b-card__footer {
+  padding: 0 25px 30px 25px;
+  @include lg {
+    padding: 0 15px 20px 15px;
+  }
+}
+.b-card__footer_row {
+  @include flex-row;
+  justify-content: space-between;
+}
+.b-card__footer_row-center {
+  align-items: center;
+}
+.b-card__meta {
+  color: $darkColor;
+  opacity: 0.8;
+  font-size: 12px;
+  line-height: 14px;
+}
+.b-card__button {
+  display: inline-block;
+}
+.b-card__button_w-100 {
+  width: 100%;
+}
+.b-card__read-more {
+  color: $darkColor;
+  display: block;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 13px;
+  line-height: 15px;
+  transition: $transition;
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+.b-card__cost {
+  @include flex-row;
+  align-items: center;
+}
+.b-card__cost-prices {
+  margin-right: 8px;
+}
+.b-card__cost-price {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 14px;
+}
+.b-card__cost-icon {
+  color: $redColor;
+  @include fz(32px, 32px);
+}
