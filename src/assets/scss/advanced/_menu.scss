@@ -1,0 +1,36 @@
+.b-menu {
+}
+.b-menu > ul {
+  @include flex-row;
+  @include row;
+}
+.b-menu > ul > li {
+  @include before {
+    display: none;
+  }
+}
+.b-menu > ul > li.active {
+  @include after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $accentColor;
+    top: 100%;
+    left: 0;
+  }
+}
+.b-menu > ul > li > a,
+.b-menu > ul > li > span {
+  display: block;
+  @include p-full;
+}
+.b-menu > ul > li > ul {
+}
+.b-menu > ul > li > ul > li {
+  @include before {
+    display: none;
+  }
+}
+.b-menu > ul > li > ul > li > a,
+.b-menu > ul > li > ul > li > span {
+}

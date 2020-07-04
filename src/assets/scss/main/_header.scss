@@ -1,9 +1,8 @@
 .b-header {
+  background-color: $lightColor;
 }
 .b-header__inner {
   @include wrapper;
-  padding: 300px;
-  background-color: red;
 }
 .b-header__content {
 }

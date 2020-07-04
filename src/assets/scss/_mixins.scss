@@ -1,4 +1,4 @@
-@mixin wrapper($w: $br1600) {
+@mixin wrapper($w: 1400px) {
   max-width: calc(#{$w} + (#{$offset} * 2));
   width: 100%;
   margin-left: auto;
@@ -133,12 +133,58 @@
 @mixin before {
   position: relative;
   &:before {
+    content: "";
     @content;
   }
 }
 @mixin after {
   position: relative;
   &:after {
+    content: "";
     @content;
   }
+}
+@mixin p {
+  padding-left: #{$offset};
+  padding-right: #{$offset};
+}
+@mixin p-full {
+  padding-left: #{$offset};
+  padding-right: #{$offset};
+  padding-top: #{$offset};
+  padding-bottom: #{$offset};
+}
+@mixin p-l {
+  padding-left: #{$offset};
+}
+@mixin p-r {
+  padding-right: #{$offset};
+}
+@mixin p-t {
+  padding-top: #{$offset};
+}
+@mixin p-b {
+  padding-bottom: #{$offset};
+}
+@mixin m {
+  margin-left: #{$offset};
+  margin-right: #{$offset};
+}
+@mixin m-full {
+  margin-left: #{$offset};
+  margin-right: #{$offset};
+  margin-top: #{$offset};
+  margin-bottom: #{$offset};
+}
+@mixin m-l {
+  margin-left: #{$offset};
+}
+@mixin m-r {
+  margin-right: #{$offset};
+}
+@mixin m-t {
+  margin-top: #{$offset};
+}
+@mixin m-b {
+  margin-bottom: #{$offset};
 }

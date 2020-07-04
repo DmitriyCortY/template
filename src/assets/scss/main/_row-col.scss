@@ -2,16 +2,34 @@
   @include row;
   @include flex-row;
 }
+.b-row_p {
+  @include p;
+}
+.b-row_p-full {
+  @include p-full;
+}
+.b-row_p-l {
+  @include p-l;
+}
+.b-row_p-r {
+  @include p-r;
+}
+.b-row_p-t {
+  @include p-t;
+}
+.b-row_p-b {
+  @include p-b;
+}
 .b-row_center {
   @include flex-center;
 }
-.b-row_al-c {
+.b-row_ai-c {
   align-items: center;
 }
-.b-row_al-start {
+.b-row_ai-start {
   align-items: flex-start;
 }
-.b-row_al-end {
+.b-row_ai-end {
   align-items: flex-end;
 }
 .b-row_jc-c {
