@@ -8,21 +8,25 @@
   @include before {
     display: none;
   }
+  color: $darkColor;
+  @include fz(13px, 16px);
+  font-weight: 400;
 }
 .b-menu > ul > li.active {
   @include after {
     position: absolute;
-    width: 100%;
+    width: calc(100% - #{$offset * 2});
     height: 1px;
     background-color: $accentColor;
     top: 100%;
-    left: 0;
+    left: #{$offset};
   }
 }
 .b-menu > ul > li > a,
 .b-menu > ul > li > span {
   display: block;
   @include p-full;
+  @include inh;
 }
 .b-menu > ul > li > ul {
 }
