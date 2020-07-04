@@ -16,6 +16,11 @@
   width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
   margin: $offset;
 }
+@mixin col-xl($n) {
+  @include xl() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
 @mixin col-laptop($n) {
   @include laptop() {
     width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
