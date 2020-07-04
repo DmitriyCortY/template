@@ -7,11 +7,20 @@ $redColor: #d96762;
 $blueColor: #0b4d65;
 
 //fonts
-$firstFont: "Exo 2", sans-serif;
-$secondFont: "Roboto", sans-serif;
+$font: "";
 
 //
-$transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+$t: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 
-//
-$radius: 15px;
+// breakpoints
+$br1600: 1600px;
+$br1440: 1440px;
+$br1170: 1170px;
+$br960: 960px;
+$br780: 780px;
+$br560: 560px;
+$br440: 440px;
+
+// grid
+$cols: 12;
+$offset: 15px;

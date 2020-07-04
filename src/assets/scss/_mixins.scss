@@ -1,0 +1,139 @@
+@mixin wrapper($w: $br1600) {
+  max-width: calc(#{$w} + (#{$offset} * 2));
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $offset;
+  padding-right: $offset;
+}
+
+@mixin row() {
+  margin: $offset * -1;
+  width: calc(100% + (#{$offset} * 2));
+}
+
+@mixin col($n) {
+  width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  margin: $offset;
+}
+@mixin col-laptop($n) {
+  @include laptop() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
+@mixin col-lg($n) {
+  @include lg() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
+@mixin col-md($n) {
+  @include md() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
+@mixin col-sm($n) {
+  @include sm() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
+@mixin col-xs($n) {
+  @include xs() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
+@mixin col-mobile($n) {
+  @include mobile() {
+    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
+  }
+}
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@mixin flex-colm() {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fz($fz, $lh: $fz) {
+  font-size: #{$fz};
+  line-height: #{$lh};
+}
+
+@mixin xl() {
+  @media screen and (max-width: $br1600) {
+    @content;
+  }
+}
+@mixin laptop() {
+  @media screen and (max-width: $br1440) {
+    @content;
+  }
+}
+@mixin lg() {
+  @media screen and (max-width: $br1170) {
+    @content;
+  }
+}
+@mixin md() {
+  @media screen and (max-width: $br960) {
+    @content;
+  }
+}
+@mixin sm() {
+  @media screen and (max-width: $br780) {
+    @content;
+  }
+}
+@mixin xs() {
+  @media screen and (max-width: $br560) {
+    @content;
+  }
+}
+@mixin mobile() {
+  @media screen and (max-width: $br440) {
+    @content;
+  }
+}
+@mixin from($min_width) {
+  @media screen and (min-width: $min_width) {
+    @content;
+  }
+}
+
+@mixin to($max_width) {
+  @media screen and (max-width: $max_width) {
+    @content;
+  }
+}
+
+@mixin inh() {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+@mixin hover {
+  transition: $t;
+  &:hover {
+    @content;
+  }
+}
+@mixin before {
+  position: relative;
+  &:before {
+    @content;
+  }
+}
+@mixin after {
+  position: relative;
+  &:after {
+    @content;
+  }
+}

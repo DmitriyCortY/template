@@ -1,123 +1,128 @@
 // text colors
-._text-accent{
-    color: $accentColor;
+._text-accent {
+  color: $accentColor;
 }
-._text-dark{
-    color: $darkColor;
+._text-dark {
+  color: $darkColor;
 }
-._text-light{
-    color: $lightColor;
+._text-light {
+  color: $lightColor;
 }
 // text colors end
 
 // text uppercase
-._text-upper{
-    text-transform: uppercase;
+._text-upper {
+  text-transform: uppercase;
 }
 // text uppercase end
 
 // text sizes
-._text-bold{
-    font-weight: 900;
+._text-bold {
+  font-weight: 900;
 }
-._text-reg{
-    font-weight: 500;
+._text-reg {
+  font-weight: 500;
 }
-._text-thin{
-    font-weight: 100;
+._text-thin {
+  font-weight: 100;
 }
 // text sizes end
 
 // text align
-._text-center, .aligncenter{
-    text-align: center;
+._text-center,
+.aligncenter {
+  text-align: center;
 }
-._text-right, .alignright{
-    text-align: right;
+._text-right,
+.alignright {
+  text-align: right;
 }
 
 // text align end
 
 // background color
-._bg-accent{
-    background-color: $accentColor;
+._bg-accent {
+  background-color: $accentColor;
 }
-._bg-light{
-    background-color: $lightColor;
+._bg-light {
+  background-color: $lightColor;
 }
-._bg-dark{
-    background-color: $darkColor;
+._bg-dark {
+  background-color: $darkColor;
 }
 // background color end
 
 // absolute positions
-._abs-left-top{
-    position: absolute;
-    top: 0;
-    left: 0;
+._abs-left-top {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-._abs-left-center{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+._abs-left-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
 }
-._abs-left-bottom{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-._abs-center-top{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-._abs-center-center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-._abs-center-bottom{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+._abs-left-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-._abs-right-top{
-    position: absolute;
-    top: 0;
-    right: 0;
+._abs-center-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-._abs-right-center{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+._abs-center-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-._abs-right-bottom{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+._abs-center-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+._abs-right-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+._abs-right-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+._abs-right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 // absolute positions end
 
 // relative positions
-._rel-left{
-    position: relative;
-    left: 0;
+._rel-left {
+  position: relative;
+  left: 0;
 }
-._rel-center{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+._rel-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-._rel-right{
-    position: relative;
-    left: 100%;
-    transform: translateX(-100%);
+._rel-right {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
 }
 // relative positions end
+[data-fancybox] {
+  cursor: zoom-in;
+}

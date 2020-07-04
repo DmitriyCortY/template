@@ -9,25 +9,6 @@
 
 <script>
     jQuery(document).ready(function ($) {
-
-        var tabs = new TABS({
-            trigger: $('[data-tab-trigger]'), // jQuery.object
-            content: $('[data-tab-content]'), // jQuery.object
-            triggerClass: 'active', // srting
-            contentClass: 'open' // srting
-        })
-        tabs.init()
-
-        if ($('.b-form').length > 0) {
-            for (var i = 0; i < $('.b-form').length; i++) {
-                $('.b-form').eq(i).materialForm();
-                $('.b-form').eq(i).validate({
-                    errorPlacement: function (error, element) { }
-                });
-            }
-        }
-
-
         // --- Инициализация слайдеров slick-slider ---
         function initSliders() {
             // first slider

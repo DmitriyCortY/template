@@ -1,0 +1,355 @@
+.b-row {
+  @include row;
+  @include flex-row;
+}
+.b-row_center {
+  @include flex-center;
+}
+.b-row_al-c {
+  align-items: center;
+}
+.b-row_al-start {
+  align-items: flex-start;
+}
+.b-row_al-end {
+  align-items: flex-end;
+}
+.b-row_jc-c {
+  justify-content: center;
+}
+.b-row_jc-start {
+  justify-content: flex-start;
+}
+.b-row_jc-end {
+  justify-content: flex-end;
+}
+//
+//
+//
+.b-col {
+}
+// modificators
+.b-col_12 {
+  @include col(12);
+}
+.b-col_11 {
+  @include col(11);
+}
+.b-col_10 {
+  @include col(10);
+}
+.b-col_9 {
+  @include col(9);
+}
+.b-col_8 {
+  @include col(8);
+}
+.b-col_7 {
+  @include col(7);
+}
+.b-col_6 {
+  @include col(6);
+}
+.b-col_5 {
+  @include col(5);
+}
+.b-col_4 {
+  @include col(4);
+}
+.b-col_3 {
+  @include col(3);
+}
+.b-col_2 {
+  @include col(2);
+}
+.b-col_1 {
+  @include col(1);
+}
+// modificators breakpoints
+//
+//
+/* ----- xl ------ */
+//
+//
+.b-col_xl-12 {
+  @include col-xl(12);
+}
+.b-col_xl-11 {
+  @include col-xl(11);
+}
+.b-col_xl-10 {
+  @include col-xl(10);
+}
+.b-col_xl-9 {
+  @include col-xl(9);
+}
+.b-col_xl-8 {
+  @include col-xl(8);
+}
+.b-col_xl-7 {
+  @include col-xl(7);
+}
+.b-col_xl-6 {
+  @include col-xl(6);
+}
+.b-col_xl-5 {
+  @include col-xl(5);
+}
+.b-col_xl-4 {
+  @include col-xl(4);
+}
+.b-col_xl-3 {
+  @include col-xl(3);
+}
+.b-col_xl-2 {
+  @include col-xl(2);
+}
+.b-col_xl-1 {
+  @include col-xl(1);
+}
+//
+//
+/* ----- laptop ------ */
+//
+//
+.b-col_laptop-12 {
+  @include col-laptop(12);
+}
+.b-col_laptop-11 {
+  @include col-laptop(11);
+}
+.b-col_laptop-10 {
+  @include col-laptop(10);
+}
+.b-col_laptop-9 {
+  @include col-laptop(9);
+}
+.b-col_laptop-8 {
+  @include col-laptop(8);
+}
+.b-col_laptop-7 {
+  @include col-laptop(7);
+}
+.b-col_laptop-6 {
+  @include col-laptop(6);
+}
+.b-col_laptop-5 {
+  @include col-laptop(5);
+}
+.b-col_laptop-4 {
+  @include col-laptop(4);
+}
+.b-col_laptop-3 {
+  @include col-laptop(3);
+}
+.b-col_laptop-2 {
+  @include col-laptop(2);
+}
+.b-col_laptop-1 {
+  @include col-laptop(1);
+}
+//
+//
+/* ----- lg ------ */
+//
+//
+.b-col_lg-12 {
+  @include col-lg(12);
+}
+.b-col_lg-11 {
+  @include col-lg(11);
+}
+.b-col_lg-10 {
+  @include col-lg(10);
+}
+.b-col_lg-9 {
+  @include col-lg(9);
+}
+.b-col_lg-8 {
+  @include col-lg(8);
+}
+.b-col_lg-7 {
+  @include col-lg(7);
+}
+.b-col_lg-6 {
+  @include col-lg(6);
+}
+.b-col_lg-5 {
+  @include col-lg(5);
+}
+.b-col_lg-4 {
+  @include col-lg(4);
+}
+.b-col_lg-3 {
+  @include col-lg(3);
+}
+.b-col_lg-2 {
+  @include col-lg(2);
+}
+.b-col_lg-1 {
+  @include col-lg(1);
+}
+//
+//
+/* ----- md ------ */
+//
+//
+.b-col_md-12 {
+  @include col-md(12);
+}
+.b-col_md-11 {
+  @include col-md(11);
+}
+.b-col_md-10 {
+  @include col-md(10);
+}
+.b-col_md-9 {
+  @include col-md(9);
+}
+.b-col_md-8 {
+  @include col-md(8);
+}
+.b-col_md-7 {
+  @include col-md(7);
+}
+.b-col_md-6 {
+  @include col-md(6);
+}
+.b-col_md-5 {
+  @include col-md(5);
+}
+.b-col_md-4 {
+  @include col-md(4);
+}
+.b-col_md-3 {
+  @include col-md(3);
+}
+.b-col_md-2 {
+  @include col-md(2);
+}
+.b-col_md-1 {
+  @include col-md(1);
+}
+//
+//
+/* ----- sm ------ */
+//
+//
+.b-col_sm-12 {
+  @include col-sm(12);
+}
+.b-col_sm-11 {
+  @include col-sm(11);
+}
+.b-col_sm-10 {
+  @include col-sm(10);
+}
+.b-col_sm-9 {
+  @include col-sm(9);
+}
+.b-col_sm-8 {
+  @include col-sm(8);
+}
+.b-col_sm-7 {
+  @include col-sm(7);
+}
+.b-col_sm-6 {
+  @include col-sm(6);
+}
+.b-col_sm-5 {
+  @include col-sm(5);
+}
+.b-col_sm-4 {
+  @include col-sm(4);
+}
+.b-col_sm-3 {
+  @include col-sm(3);
+}
+.b-col_sm-2 {
+  @include col-sm(2);
+}
+.b-col_sm-1 {
+  @include col-sm(1);
+}
+//
+//
+/* ----- xs ------ */
+//
+//
+.b-col_xs-12 {
+  @include col-xs(12);
+}
+.b-col_xs-11 {
+  @include col-xs(11);
+}
+.b-col_xs-10 {
+  @include col-xs(10);
+}
+.b-col_xs-9 {
+  @include col-xs(9);
+}
+.b-col_xs-8 {
+  @include col-xs(8);
+}
+.b-col_xs-7 {
+  @include col-xs(7);
+}
+.b-col_xs-6 {
+  @include col-xs(6);
+}
+.b-col_xs-5 {
+  @include col-xs(5);
+}
+.b-col_xs-4 {
+  @include col-xs(4);
+}
+.b-col_xs-3 {
+  @include col-xs(3);
+}
+.b-col_xs-2 {
+  @include col-xs(2);
+}
+.b-col_xs-1 {
+  @include col-xs(1);
+}
+//
+//
+/* ----- mobile ------ */
+//
+//
+.b-col_mobile-12 {
+  @include col-mobile(12);
+}
+.b-col_mobile-11 {
+  @include col-mobile(11);
+}
+.b-col_mobile-10 {
+  @include col-mobile(10);
+}
+.b-col_mobile-9 {
+  @include col-mobile(9);
+}
+.b-col_mobile-8 {
+  @include col-mobile(8);
+}
+.b-col_mobile-7 {
+  @include col-mobile(7);
+}
+.b-col_mobile-6 {
+  @include col-mobile(6);
+}
+.b-col_mobile-5 {
+  @include col-mobile(5);
+}
+.b-col_mobile-4 {
+  @include col-mobile(4);
+}
+.b-col_mobile-3 {
+  @include col-mobile(3);
+}
+.b-col_mobile-2 {
+  @include col-mobile(2);
+}
+.b-col_mobile-1 {
+  @include col-mobile(1);
+}
