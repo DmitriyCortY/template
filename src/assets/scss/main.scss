@@ -1,41 +1,24 @@
+@import "_fonts";
 @import "_var";
+@import "_zeroing";
 @import "_mixins.scss";
 @import "_tags";
+@import "_glob-modifiers";
 @import "main/**/*.scss";
 @import "simple/**/*.scss";
 @import "advanced/**/*.scss";
-@import "_glob-modifiers";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-body {
-  font-family: $font;
-}
-a,
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  color: unset;
-}
-
-@include from(960px) {
-  ::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
-    background-color: rgba($accentColor, 0.4);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: $accentColor;
-  }
+@media (hover: hover) {
+     ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+        background: $secondary;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
 }
 
 ::selection {
-  background-color: $accentColor;
-  color: $lightColor;
+    background-color: $primary;
+    color: $light;
 }

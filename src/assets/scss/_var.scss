@@ -1,26 +1,34 @@
 //colors
-$accentColor: #00a652;
-$darkColor: #000000;
-$lightColor: #ffffff;
-$greenColor: #065746;
-$redColor: #d96762;
-$blueColor: #0b4d65;
-
+$primary: #2E43FE;
+$secondary: #f6f7f9;
+$light: #ffffff;
+$dark: #000000;
+$gray: rgba(#000000, 0.7);
+$muted: rgba(#000000, 0.2);
+$bg: rgba(#d9d9d9, 0.3);
+// 
+$notChromeBg: #eaebec;
 //fonts
-$font: "Montserrat", sans-serif;
-
+$font: "PxGrotesk",
+sans-serif;
 //
-$t: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-
+$t: all 0.25s ease;
 // breakpoints
-$br1600: 1600px;
-$br1440: 1440px;
-$br1170: 1170px;
-$br960: 960px;
-$br780: 780px;
-$br560: 560px;
-$br440: 440px;
-
+$xl: 1440px;
+$lg: 1170px;
+$md: 960px;
+$sm: 780px;
+$xs: 560px;
 // grid
+$container-full: 1320px;
+$container-xl: $lg;
+$container-lg: $md;
+$container-md: $sm;
+$container-sm: $xs;
+$container-xs: 420px;
 $cols: 12;
-$offset: 15px;
+$offset: 20px;
+// styles
+$radius-lg: 22px;
+$radius-md: 16px;
+$radius-sm: 10px;

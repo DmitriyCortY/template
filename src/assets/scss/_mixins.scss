@@ -1,190 +1,218 @@
-@mixin wrapper($w: 1400px) {
-  max-width: calc(#{$w} + (#{$offset} * 2));
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $offset;
-  padding-right: $offset;
+// breackpoints 
+@mixin xl() {
+    @media screen and (max-width: $xl) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media screen and (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media screen and (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media screen and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin xs() {
+    @media screen and (max-width: $xs) {
+        @content;
+    }
+}
+
+// grid
+@mixin wrapper() {
+    width: 100%;
+    max-width: #{$container-full + ($offset * 6)};
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: #{$offset * 3};
+    padding-right: #{$offset * 3};
+    @include xl {
+        // max-width: #{$container-xl + ($offset * 4)};
+        max-width: #{$container-xl};
+        padding-left: #{$offset * 2};
+        padding-right: #{$offset * 2};
+    }
+    @include lg {
+        // max-width: #{$container-lg + ($offset * 4)};
+        max-width: #{$container-lg};
+    }
+    @include md {
+        // max-width: #{$container-md + ($offset * 4)};
+        max-width: #{$container-md};
+    }
+    @include sm {
+        // max-width: #{$container-sm + ($offset * 2)};
+        max-width: #{$container-sm};
+        padding-left: #{$offset};
+        padding-right: #{$offset};
+    }
+    @include xs {
+        // max-width: #{$container-xs + ($offset * 2)};
+        max-width: #{$container-xs};
+    }
 }
 
 @mixin row() {
-  margin: $offset * -1;
-  width: calc(100% + (#{$offset} * 2));
+    margin: #{$offset * -1};
+    width: calc(100% + #{$offset * 2});
+    @include flex-row;
+    @include sm {
+        margin: #{$offset / -2};
+        width: calc(100% + #{$offset});
+    }
 }
 
 @mixin col($n) {
-  width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  margin: $offset;
+    width: 100%;
+    max-width: #{((100 / 12) * $n) + '%'};
+    padding: #{$offset};
+    @include sm {
+        padding: #{$offset / 2};
+    }
 }
+
 @mixin col-xl($n) {
-  @include xl() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
+    @include xl() {
+        max-width: #{((100 / 12) * $n) + '%'};
+    }
 }
-@mixin col-laptop($n) {
-  @include laptop() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
-}
+
 @mixin col-lg($n) {
-  @include lg() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
+    @include lg() {
+        max-width: #{((100 / 12) * $n) + '%'};
+    }
 }
+
 @mixin col-md($n) {
-  @include md() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
+    @include md() {
+        max-width: #{((100 / 12) * $n) + '%'};
+    }
 }
+
 @mixin col-sm($n) {
-  @include sm() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
+    @include sm() {
+        max-width: #{((100 / 12) * $n) + '%'};
+    }
 }
+
 @mixin col-xs($n) {
-  @include xs() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
+    @include xs() {
+        max-width: #{((100 / 12) * $n) + '%'};
+    }
 }
-@mixin col-mobile($n) {
-  @include mobile() {
-    width: calc(((100% / #{$cols}) * #{$n}) - #{$offset} * 2);
-  }
-}
+
 @mixin flex-row() {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 @mixin flex-colm() {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
 @mixin flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin fz($fz, $lh: $fz) {
-  font-size: #{$fz};
-  line-height: #{$lh};
-}
-
-@mixin xl() {
-  @media screen and (max-width: $br1600) {
-    @content;
-  }
-}
-@mixin laptop() {
-  @media screen and (max-width: $br1440) {
-    @content;
-  }
-}
-@mixin lg() {
-  @media screen and (max-width: $br1170) {
-    @content;
-  }
-}
-@mixin md() {
-  @media screen and (max-width: $br960) {
-    @content;
-  }
-}
-@mixin sm() {
-  @media screen and (max-width: $br780) {
-    @content;
-  }
-}
-@mixin xs() {
-  @media screen and (max-width: $br560) {
-    @content;
-  }
-}
-@mixin mobile() {
-  @media screen and (max-width: $br440) {
-    @content;
-  }
-}
-@mixin from($min_width) {
-  @media screen and (min-width: $min_width) {
-    @content;
-  }
-}
-
-@mixin to($max_width) {
-  @media screen and (max-width: $max_width) {
-    @content;
-  }
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin inh() {
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
 }
+
 @mixin hover {
-  transition: $t;
-  &:hover {
-    @content;
-  }
+    transition: $t;
+    &:hover {
+        @content;
+    }
 }
+
 @mixin before {
-  position: relative;
-  &:before {
-    content: "";
-    @content;
-  }
+    position: relative;
+    &:before {
+        content: "";
+        @content;
+    }
 }
+
 @mixin after {
-  position: relative;
-  &:after {
-    content: "";
-    @content;
-  }
+    position: relative;
+    &:after {
+        content: "";
+        @content;
+    }
 }
-@mixin p {
-  padding-left: #{$offset};
-  padding-right: #{$offset};
+
+// typography
+@mixin title-lg {
+    font-size: 60px;
+    line-height: 1.1;
+    @include xl {
+        font-size: 55px;
+    }
+    @include lg {
+        font-size: 50px;
+    }
+    @include md {
+        font-size: 45px;
+    }
+    @include sm {
+        font-size: 40px;
+        line-height: 1.12;
+    }
+    @include xs {
+        font-size: 34px;
+    }
 }
-@mixin p-full {
-  padding-left: #{$offset};
-  padding-right: #{$offset};
-  padding-top: #{$offset};
-  padding-bottom: #{$offset};
+
+@mixin title-md {
+    font-size: 44px;
+    line-height: 1.246;
+    @include xl {
+        font-size: 42px;
+    }
+    @include lg {
+        font-size: 40px;
+    }
+    @include md {
+        font-size: 38px;
+    }
+    @include sm {
+        font-size: 36px;
+    }
+    @include xs {
+        font-size: 34px;
+    }
 }
-@mixin p-l {
-  padding-left: #{$offset};
+
+@mixin text-lg {
+    font-size: 18px;
+    line-height: 32px;
 }
-@mixin p-r {
-  padding-right: #{$offset};
+
+@mixin text-md {
+    font-size: 16px;
+    line-height: 24px;
 }
-@mixin p-t {
-  padding-top: #{$offset};
-}
-@mixin p-b {
-  padding-bottom: #{$offset};
-}
-@mixin m {
-  margin-left: #{$offset};
-  margin-right: #{$offset};
-}
-@mixin m-full {
-  margin-left: #{$offset};
-  margin-right: #{$offset};
-  margin-top: #{$offset};
-  margin-bottom: #{$offset};
-}
-@mixin m-l {
-  margin-left: #{$offset};
-}
-@mixin m-r {
-  margin-right: #{$offset};
-}
-@mixin m-t {
-  margin-top: #{$offset};
-}
-@mixin m-b {
-  margin-bottom: #{$offset};
+
+@mixin supt {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
 }

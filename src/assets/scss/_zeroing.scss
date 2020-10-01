@@ -1,0 +1,24 @@
+a:active {
+    color: unset;
+}
+
+a:visited {
+    color: unset;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: $font;
+    background-color: $secondary;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
