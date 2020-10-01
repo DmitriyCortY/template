@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "gulp-file-include": "^2.0.1",
-    "npm": "^6.1.0"
+    "npm": "^6.14.6"
   }
 }
